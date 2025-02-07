@@ -1,4 +1,5 @@
 let amigos = [];
+let numeroAmigos = 0;
 
 //capturar el valor del campo de entrada
 
@@ -9,6 +10,7 @@ function agregarAmigo() {
     } else {
         amigos.push(amigosIngresados);
     }
+    actualizarLista();
     limpiarCampoDeEntrada();
 }
 
@@ -25,20 +27,23 @@ function actualizarLista() {
    }
 }
 
-
-
-
-
-
-
-
-
-
 function sortearAmigo() {
-
+        if(amigos.length === 0) {
+        return alert('No has ingresado amigos para el sorteo')
+    } else {
+        let j = Math.floor(Math.random() * amigos.length);
+        let amigoSeleccionado = amigos[j];
+        asignarTextoElemento('resultado', `Tu amigo secreto es ${amigoSeleccionado}`);
+    }  
 }
 
 function limpiarCampoDeEntrada() {
     document.querySelector('#amigo').value = '';
+}
+
+function asignarTextoElemento(id, texto) {
+    let elementoHTML = document.getElementById(id);
+    elementoHTML.innerHTML = texto;
+    return;
 }
 
