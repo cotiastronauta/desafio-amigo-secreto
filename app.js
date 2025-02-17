@@ -1,5 +1,8 @@
+/* "use strict";
+
 let amigos = [];
 let numeroAmigos = 0;
+let lista = 
 
 //capturar el valor del campo de entrada
 
@@ -14,7 +17,7 @@ function agregarAmigo() {
     limpiarCampoDeEntrada();
 }
 
-// función que rrecorre amigos y crea una lista con los nombres en el dom
+// función que recorre amigos y crea una lista con los nombres en el dom
 
 function actualizarLista() {
    let listaNombres = document.getElementById('listaAmigos');
@@ -46,4 +49,59 @@ function asignarTextoElemento(id, texto) {
     elementoHTML.innerHTML = texto;
     return;
 }
+
+*/
+
+let listaAmigos = [];
+console.log(listaAmigos);
+let lista = document.getElementById("listaAmigos");
+
+function agregarAmigo() {
+    let nombreAmigo = document.getElementById("amigo").value;
+    
+
+    if (nombreAmigo === "") {
+        alert("Por favor, inserte un nombre.");
+        
+    } else {
+        listaAmigos.push(nombreAmigo);
+        document.getElementById("amigo").value = "";
+        actualizarLista()
+    };
+
+    console.log(listaAmigos);
+
+    return;
+};
+
+function actualizarLista() {
+    lista.innerHTML = ""; 
+
+    let inicioLista = 0;
+    let finalLista = listaAmigos.length -1;
+
+    while (inicioLista <= finalLista) {
+        let listaNombre = document.createElement("li");
+        listaNombre.textContent = listaAmigos[inicioLista];
+        lista.appendChild(listaNombre);
+        inicioLista++;
+    };
+
+    return;
+};
+
+function sortearAmigo() {
+    if (listaAmigos.length === 0) {
+        alert("No hay ningún nombre disponible.")
+    } else {
+        let indiceSorteado = Math.floor(Math.random() * (listaAmigos.length));
+        let nombreSorteado = listaAmigos[indiceSorteado];
+        let nombreMostrado = document.getElementById("resultado");
+        nombreMostrado.innerHTML = nombreSorteado;
+
+        lista.innerHTML = ""; 
+    };
+
+    return;
+};
 
