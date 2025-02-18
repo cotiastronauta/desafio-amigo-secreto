@@ -20,11 +20,11 @@ Esta aplicación permite al usuario introducir, uno a uno, una lista de nombres 
 
 ## Conoce sus funciones 
 
-Puedes `[visitar mi proyecto] (https://cotiastronauta.github.io/desafio-amigo-secreto/)` para conocer cómo funciona.
+Puedes [visitar mi proyecto](https://cotiastronauta.github.io/desafio-amigo-secreto/) para conocer cómo funciona.
 
 ## Colaboraciones
 
-Si quieres obtener este proyecto para modificar o practicar, puedes descargarlo desde `[este enlace] (https://github.com/cotiastronauta/desafio-amigo-secreto.git)`
+Si quieres obtener este proyecto para modificar o practicar, puedes descargarlo desde [este enlace](https://github.com/cotiastronauta/desafio-amigo-secreto.git).
 
 ## Licencia
 
