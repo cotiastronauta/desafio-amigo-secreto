@@ -16,6 +16,7 @@ Esta aplicación permite al usuario introducir, uno a uno, una lista de nombres 
 ## ¿Qué hace esta aplicación?
 
 `Primer paso`: el usuario puede añadir nombres de sus amigos que son guardados en una lista visible también para él.
+
 `Segundo paso`: el usuario puede realizar un sorteo para que uno de los nombres escritos en la lista sea seleccionado. 
 
 ## Conoce sus funciones 
