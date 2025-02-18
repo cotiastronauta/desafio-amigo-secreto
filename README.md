@@ -11,8 +11,15 @@ Esta aplicación permite al usuario introducir, uno a uno, una lista de nombres 
 `Primer paso`: el usuario puede añadir nombres de sus amigos que son guardados en una lista visible también para él.
 `Segundo paso`: el usuario puede realizar un sorteo para que uno de los nombres escritos en la lista sea seleccionado. 
 
+## Uso
+
 ## Colaboraciones
 
 Si quieres colaborar en el proyecto, puedes ingresar a 
 
 ## Licencia
+
+Este proyecto está bajo la [Licencia MIT](LICENSE).  
+
+
+[Visita mi proyecto](https://github.com/usuario/proyecto)`.  
